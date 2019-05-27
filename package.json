@@ -1,6 +1,6 @@
 {
   "name": "@things-factory/biz-test",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "main": "dist-server/index.js",
   "browser": "client/index.js",
   "things-factory": true,
@@ -15,8 +15,8 @@
     "clean:server": "rm -rf dist-server",
     "clean:client": "rm -rf dist-client",
     "clean": "npm run clean:server && npm run clean:client",
-    "prepublish": "npm run build:server",
-    "premigration": "npm run build:server && cp -rf ./server/seed-data ./dist-server/seed-data",
+    "prepublish": "npm run build:server && mkdir -p ./dist-server/seed-data && cp -rf ./server/seed-data ./dist-server/seed-data",
+    "premigration": "npm run build:server",
     "migration": "things-factory-migration",
     "migration:create": "node ./node_modules/typeorm/cli.js migration:create",
     "migration:generate": "node ./node_modules/typeorm/cli.js migration:generate",
