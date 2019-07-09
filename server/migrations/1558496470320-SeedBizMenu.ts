@@ -1,6 +1,6 @@
 import { MigrationInterface, QueryRunner, getRepository } from 'typeorm'
 import { Domain } from '@things-factory/shell'
-import { Menu } from '@things-factory/biz-base'
+import { Menu } from '@things-factory/menu-base'
 import { BIZ_MENUS } from '../seed-data/biz-menus'
 
 export class SeedBizMenu1558496470320 implements MigrationInterface {
