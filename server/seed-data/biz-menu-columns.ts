@@ -72,7 +72,7 @@ export const BIZ_MENU_COLUMNS = [
     menuName: 'Company',
     rank: 10,
     extField: false,
-    term: 'field.countryCode',
+    term: 'field.country_code',
     gridWidth: 100
   },
   {
