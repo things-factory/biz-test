@@ -6,7 +6,7 @@ const path = require('path')
 export class SeedCompany1558663372466 implements MigrationInterface {
   public async up(queryRunner: QueryRunner): Promise<any> {
     const repository = getRepository(Company)
-    const csvPath = path.resolve(__dirname, '../seed-data/company.csv')
+    const csvPath = path.resolve(__dirname, '..', 'seed-data', 'company.csv')
 
     try {
       const json = await csv().fromFile(csvPath)
